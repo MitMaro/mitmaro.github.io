@@ -1,0 +1,3 @@
+[submodule "_plugins/jekyll-tagging-pagination"]
+	path = _plugins/jekyll-tagging-pagination
+	url = git@github.com:MitMaro/jekyll-tagging-pagination.git
