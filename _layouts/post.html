@@ -8,6 +8,7 @@ layout: sidebar
 			<span class="date">{{ page.date | date: "%d %b %Y"}}</span>
 		</div>
 	</header>
+<!--
 	<div class="tags">
 		<ul id="tag-cloud">
 			{% for tag in page.tags %}
@@ -17,6 +18,7 @@ layout: sidebar
 			{% endfor %}
 		</ul>
 	</div>
+-->
 	<div class="content">
 		{{ content | replace:"<!-- more -->", "" }}
 	</div>

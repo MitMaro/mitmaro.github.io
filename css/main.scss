@@ -229,11 +229,15 @@ code[class*="language-"], pre[class*="language-"] {
 div.content {
 	margin-top: 10px;
 	text-indent: 20px;
-
+	letter-spacing: 1px;
+	text-align: justify;
 	p {
 		margin-top: 8px;
 		text-align: justify;
 		line-height: 1.3em;
+		margin-bottom: 10px;
+		text-indent: 25px;
+		line-height: 25px;
 	}
 
 	ul {
@@ -307,7 +311,6 @@ div#archive h2 {
 }
 
 div.about {
-	font-weight: 2px;
 	letter-spacing: 1px;
 	text-align: justify;
 	p {
