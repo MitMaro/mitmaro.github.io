@@ -1,0 +1,50 @@
+{% if site.paginate_path_default %}
+	{% assign paginate_path_default = site.paginate_path_default | uri_escape %}
+{% else %}
+	{% assign paginate_path_default = "blog" %}
+{% endif %}
+
+{% if include.path %}
+	{% assign path = include.path %}
+{% else %}
+	{% assign path = paginate_path_default %}
+{% endif %}
+
+{% capture base_url %}{{ site.root }}{{ path }}{% endcapture %}
+
+{% if include.first_page %}
+	{% assign first_page = include.first_page %}
+{% else %}
+	{% assign first_page = "index.html" %}
+{% endif %}
+
+
+{% comment %}
+<pre>
+Paginate Path Default: {{ paginate_path_default }}
+Base Url: {{ base_url }}
+Path: {{ path }}
+Previous Page: {{ paginator.previous_page }}
+Next Page: {{ paginator.next_page }}
+First Page: {{ first_page }}
+</pre>
+{% endcomment %}
+
+<div id="site-pagination">
+	{% if paginator.previous_page %}
+		<div class="previous">
+			<i class="fa fa-chevron-left"></i>
+		{% if paginator.page == 2 %}
+			<a href="{{ site.root }}{{ first_page }}">
+		{% elsif paginator.page != 1 %}
+			<a href="{{ base_url }}/page{{ paginator.previous_page }}">
+		{% endif %}
+			Newer Posts</a>
+		</div>
+	{% endif %}
+	{% if paginator.next_page %}
+	<div class="next">
+		<a href="{{ base_url }}/page{{ paginator.next_page }}">Older Posts<i class="fa fa-chevron-right"></i></a>
+	</div>
+	{% endif %}
+</div>

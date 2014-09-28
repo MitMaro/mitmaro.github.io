@@ -1,0 +1,11 @@
+---
+layout: sidebar
+---
+<h1>Posts under {{ paginator.tag }}</h1>
+
+<div id="posts">
+	{% include post_list.html posts=paginator.posts %}
+	{% assign path = "tags/" | append: paginator.tag | uri_escape %}
+	{% assign first_page = path | append: "/index.html" %}
+	{% include paginate.html path=path first_page=first_page %}
+</div>

@@ -1,0 +1,33 @@
+
+title: MitMaro Productions
+author:
+    name: Tim Oram
+
+description: "The personal website and blog of Tim \"MitMaro\" Oram. A place for him to rant about things he dislikes and showcase his projects."
+url: "http://www.mitmaro.ca"
+root: "/"
+
+
+excerpt_separator: "<!-- more -->"
+permalink: /:year/:month/:day/:title
+
+
+paginate_path: "blog/page:num"
+number_popularity_classes: 4
+paginate: 5
+paginate_url: ":path/page:num"
+paginate_path_default: "blog"
+paginate_first_default: "index.html"
+
+
+timezone: "America/St_Johns"
+
+exclude:
+    - "config.rb"
+    - "node_modules"
+    - "package.json"
+
+gems:
+    - "mm-jekyll-tags-list"
+    - "mm-jekyll-prism"
+    - "bourbon"

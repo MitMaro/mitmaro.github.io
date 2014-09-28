@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+	MitMaro Productions - {{ page.title }}</title>
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+	<meta name="author" content="{{ site.author.name }}">
+	<!-- For IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<script src="//use.edgefonts.net/exo;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9.js"></script>
+	<script src="{{ site.root }}js/prism.js"></script>
+	<link href="{{ site.root }}css/reset.css" rel="stylesheet"/>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="{{ site.root }}css/prism.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="{{ site.root }}css/main.css"/>
+</head>
+<body>
+<div id="page">
+	<header class="site-header">
+		<div id="site-logo">
+		<a href="{{ site.root }}">
+			<span class="accent">M</span>it<span class="accent">M</span>aro <span class="accent">P</span>roductions
+		</a>
+		</div>
+		<div id="header-links">
+			<ul>
+				<li><a href="{{ site.root }}about.html">About</a></li>
+<!--
+				<li><i class="fa fa-minus"></i><a href="{{ site.root }}archives.html">Archives</a></li>
+				<li><i class="fa fa-minus"></i><a href="{{ site.root }}archives.html">Resume</a></li>
+-->
+			</ul>
+			<ul class="social">
+				<li><a href="http://ca.linkedin.com/in/mitmaro/"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="http://github.com/MitMaro"><i class="fa fa-github"></i></a></li>
+				<li><a href="http://stackoverflow.com/users/124861/mitmaro"><i class="fa fa-stack-overflow"></i></a></li>
+			</ul>
+		</div>
+	</header>
+	<div id="page-content">
