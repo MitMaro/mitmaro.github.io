@@ -5,7 +5,7 @@ category: general
 tags: [Site]
 ---
 
-It's been nearly five years since the last redesign of this site and I decided to try something new. Previous version of my website were custom built in PHP and backed by a database. While this gave me unlimited possibilities it also meant that any small modification required a lot of time and effort. I have decided to ditch a dynamic website in favour of a static site built using [Jekyll](http://jekyllrb.com/) that, hopefully, will mean posting new articles will take less effort and happen more often.
+It's been nearly five years since the last redesign of this site and I decided to try something new. Previous versions of my website were custom built in PHP and backed by a database. While this gave me unlimited possibilities it also meant that any small modification required a lot of time and effort. I have decided to ditch a dynamic website in favour of a static site built using [Jekyll](http://jekyllrb.com/) that, hopefully, will mean posting new articles will take less effort and happen more often.
 
 <!-- more -->
 
