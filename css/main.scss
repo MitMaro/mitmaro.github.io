@@ -112,7 +112,9 @@ div#page-content {
 	h1 {
 		border-bottom: 4px solid $comp_nn;
 		padding-bottom: 5px;
+		padding-right: 8px;
 		margin-bottom: 25px;
+		margin-top: 8px;
 		font-family: exo, sans-serif;
 		font-size: 20px;
 		font-weight: 400;
@@ -141,6 +143,7 @@ div#posts, section#post {
 		width: $post_date_width;
 		font-size: 14px;
 		padding-top:3px;
+		padding-right: 20px;
 	}
 
 	h2 {
@@ -181,6 +184,7 @@ div#posts {
 section#post {
 	h1 {
 		margin-bottom: 5px;
+		padding-right: 8px;
 	}
 }
 
@@ -232,6 +236,7 @@ div.content {
 	text-indent: 20px;
 	letter-spacing: 1px;
 	text-align: justify;
+	padding: 0 8px;
 	p {
 		margin-top: 8px;
 		text-align: justify;
